@@ -37,7 +37,7 @@ const Message = () => {
       </h2>
 
       <div className="flex gap-10 flex-row-reverse justify-between items-center my-20">
-        <div className=" flex-1  ">
+        <div className=" flex-1 hidden md:block  ">
           <Lottie animationData={emailLottie}></Lottie>
         </div>
         <div className="flex-1  ">

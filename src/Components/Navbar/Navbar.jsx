@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Social from "../Social/Social";
+import { FaFileDownload } from "react-icons/fa";
+import { FaArrowTurnDown } from "react-icons/fa6";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about");
@@ -23,7 +25,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.7 }
+      { threshold: 0.5 }
     );
 
     sections.forEach((section) => {
@@ -125,19 +127,35 @@ const Navbar = () => {
   );
 
   return (
-    <div className="h-screen sticky top-0 ">
+    <div className="h-screen sticky top-0  ">
       <div className="h-full text-xl  text-white flex flex-col justify-around ">
         <div className="space-y-5">
           <p className=" text-sm md:text-lg lg:text-xl  font-semibold">
             Hello, I&apos;m
           </p>
           <h1 className="text-[44px] font-bold ">Md. Abdullah Al Mamun</h1>
-          <h4 className="text-xl font-semibold ">Jnr. Frontend Developer</h4>
+          <h4 className="text-2xl font-semibold ">Jnr. Frontend Developer</h4>
           <p className="text-base font-medium w-80 text-slate-400">
             I am a frontend focused <strong className="uppercase">mern </strong>{" "}
             stack developer. I build pixel-perfect, engaging, and accessible
             digital experiences.
           </p>
+          <div className="flex gap-5">
+            <a
+              href="https://drive.google.com/file/d/12uWGdJhBwjnlcMPHf0vt_qA0OvGQb4FJ/view"
+              target="_"
+            >
+              <button className="px-3 py-2 lg:px-5 lg:py-2 rounded-lg   border-none font-bold flex items-center gap-3 uppercase  bg-white hover:bg-slate-300 duration-200 text-[#000] text-sm md:text-base lg:text-lg ">
+                Resume <FaFileDownload className="text-xl animate-bounce" />
+              </button>
+            </a>
+            <button
+              onClick={() => scrollToSection("message")}
+              className="px-3 py-2 lg:px-5 lg:py-2 rounded-lg    border-none font-bold flex items-center gap-3 uppercase  bg-white hover:bg-slate-300 duration-200 text-[#000] text-sm md:text-base lg:text-lg "
+            >
+              Hire me <FaArrowTurnDown className="text-xl animate-bounce" />
+            </button>
+          </div>
         </div>
 
         {/* navigaors */}
