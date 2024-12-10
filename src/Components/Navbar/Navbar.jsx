@@ -142,7 +142,7 @@ const Navbar = () => {
           </p>
           <div className="flex gap-5">
             <a
-              href="https://drive.google.com/file/d/12uWGdJhBwjnlcMPHf0vt_qA0OvGQb4FJ/view"
+              href="https://drive.google.com/file/d/1tlP5SbWkSI_39VX5VAasjR9XLQfQi6RV/view?usp=sharing"
               target="_"
             >
               <button className="px-3 py-2 lg:px-5 lg:py-2 rounded-lg   border-none font-bold flex items-center gap-3 uppercase  bg-white hover:bg-slate-300 duration-200 text-[#000] text-sm md:text-base lg:text-lg ">
